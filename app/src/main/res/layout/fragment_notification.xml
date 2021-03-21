@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PodcastFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/app_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_settings"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/post"
+            style="@style/TextAppearance.AppCompat.Display3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-black"
+            android:text="My Podcasts"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_search2"
+            android:layout_marginRight="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+    </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+        <TextView
+            android:id="@+id/online"
+            style="@style/TextAppearance.AppCompat.Display3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Online"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/likes"
+            style="@style/TextAppearance.AppCompat.Display3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Likes"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/downloads"
+        style="@style/TextAppearance.AppCompat.Display3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignParentEnd="true"
+        android:text="Downloads"
+        android:layout_marginRight="22dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_episodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Episodes"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="25sp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/har_fun_maula"
+                />
+
+            <LinearLayout
+                android:id="@+id/song_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_1"
+                >
+
+                <TextView
+                    android:id="@+id/duration1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:04 mins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/song_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marjawa - By K.K"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    style="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/album1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speed Records - 2021"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/song_info1"
+                >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mexico"
+                />
+
+            <LinearLayout
+                android:id="@+id/song_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_2"
+                >
+
+                <TextView
+                    android:id="@+id/duration2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:35 mins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/song_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mexico - By Arijit"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    style="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/album2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Punjabi Hits - 2021      "
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/song_info2"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/hold_on"
+                />
+
+            <LinearLayout
+                android:id="@+id/song_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_3"
+                >
+
+                <TextView
+                    android:id="@+id/duration3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4:45 mins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/song_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hold On - Eminem"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    style="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/album3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eminem"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/song_info3"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/fly"
+                />
+
+            <LinearLayout
+                android:id="@+id/song_info4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_4"
+                >
+
+                <TextView
+                    android:id="@+id/duration4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:28 mins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/song_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fly - By Guru         "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    style="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/album4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GMC  - 2021"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/song_info4"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/oye_hoye"
+                />
+
+            <LinearLayout
+                android:id="@+id/song_info5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_5"
+                >
+
+                <TextView
+                    android:id="@+id/duration5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4:52 mins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/song_title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oye Hoye -By Atif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    style="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/album5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atif album - 2021"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/song_info5"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lut_gaye2"
+                />
+
+            <LinearLayout
+                android:id="@+id/song_info6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_6"
+                >
+
+                <TextView
+                    android:id="@+id/duration6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:48 mins"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/song_title6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lut Gaye-By Jubin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    style="@style/TextAppearance.AppCompat.Display2"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/album6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jubin Hits - 2021"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/song_info6"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/play_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
